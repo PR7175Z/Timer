@@ -3,18 +3,23 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+	<title>Timer</title>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="title">
-		Timer
+	<div class="container">
+		<div class="timerwrap">
+			<div class="title">
+				<h1>Timer</h1>
+			</div>
+			<form method="post">
+				<input type="number" name="minutes" placeholder="Minutes" min="0" max="60">
+				<input type="number" name="seconds" placeholder="Seconds" min="0" max="60">
+				<button id="submit-btn">Submit</button>
+			</form>
+			<div id="output" class="outputtimer"></div>
+		</div>
 	</div>
-	<form>
-		<input type="number" name="minutes" placeholder="Minutes">
-		<input type="number" name="seconds" placeholder="Seconds">
-		<button id="submit-btn">Submit</button>
-	</form>
-	<div id="output"></div>
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
